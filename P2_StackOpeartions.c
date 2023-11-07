@@ -9,7 +9,7 @@ void Push(int x) {
     printf("Error: Stack overflow\n"); 
     return;
   }
-  A[++top] = x;
+  A[++top] = x;   //initially top = -1 means there no element in the stack, so firstly increase the size then pushes the element to the stack
 }
 
 void Pop() {
@@ -17,7 +17,7 @@ void Pop() {
     printf("Error: No elements to pop\n");
     return;
   }
-  top--; 
+  top--;  // if the size of the stack is greater than -1 then it decrease the size of top by 1 means it pops the element from the stack
 }
 
 void Display() {
